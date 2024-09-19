@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="nav"><h1>Bem vindo ao Dashboard</h1></div>
+
+    <div class="main">
+        <button><a href="{{url_for('exercicios')}}">Exercicios</a></button>
+
+    
+    <div class="rodape">
+        <form action="{{url_for('logout')}}" method="post">
+            <button>Sair</button>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
