@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastre Usuários aqui</h1>
+    <form action="{{url_for('cad_user')}}" method="POST">
+        Nome:<input type="text" name="nome" id="" placeholder="Nome">
+        <button type="submit">Cadastrar usuário</button>
+    </form>
+</body>
+</html>

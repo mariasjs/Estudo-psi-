@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="{{url_for('cad_user')}}">Página de cadastro de usuários</a>
+    <a href="{{url_for('cad_liv')}}">Página de cadastro de livros</a>   
+
+    <h2>Livros cadastrados</h2>
+    {% for livro in resultado %}
+    <p>{{livro.titulo}}</p>
+    {% endfor %}
+</body>
+</html>
